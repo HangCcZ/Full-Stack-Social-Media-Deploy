@@ -4,10 +4,11 @@
 
 
 ### Future plans and updates on the application:
- - Signup validation
- - Update sign up notification
- - Update sign in notification
- - Add content field with markdown (Draft.js)
+ - Refactor sign-in form with formik
+ - Sign-up validation
+ - Update sign-up notification
+ - Update sign-in notification
+ - Add a new content field with markdown (Draft.js)
  - Allow user to upload images
 
 
