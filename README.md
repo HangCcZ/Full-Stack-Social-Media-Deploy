@@ -6,7 +6,7 @@
 ### Future plans and updates on the application:
  - Signup validation
  - Update sign in notification
- - Add content field with markdown 
+ - Add content field with markdown (Draft.js)
  - Allow user to upload images
 
 
