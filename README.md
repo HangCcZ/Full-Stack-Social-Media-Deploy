@@ -7,7 +7,7 @@
  - Sign-up validation
  - Update sign-up notification
  - Update sign-in notification
- - Add content field with markdown (Draft.js)
+ - Add a new content field with markdown (Draft.js)
  - Allow user to upload images
 
 
