@@ -3,8 +3,8 @@
 **This repo contains only the deployment version code.** [Click here to see the frontend code](https://github.com/HangCcZ/Full-Stack-Blog-Sharing-Frontend)
 
 
-### Future plans / updates:
- - Signup UI validation
+### Future plans and updates on the application:
+ - Signup validation
  - Update sign in notification
  - Add content field with markdown 
  - Allow user to upload images
