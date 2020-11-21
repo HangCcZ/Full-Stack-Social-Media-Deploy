@@ -4,6 +4,7 @@
 
 
 ### Future plans and updates on the application:
+ - Refactor sign-in form with formik
  - Sign-up validation
  - Update sign-up notification
  - Update sign-in notification
