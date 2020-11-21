@@ -1,4 +1,4 @@
-# This is a full stack web application that allow users to share news, idea and more. [Click here to see it live!](https://full-stack-blog-sharing.herokuapp.com/)
+# This is a full stack web application that allow users to share news, idea and more. [Click here to see it live, sign up an account and leave a post!](https://full-stack-blog-sharing.herokuapp.com/)
 ## This web application utilizing React, Redux, Express, Node, MongoDB and react bootstrap.
 
 
