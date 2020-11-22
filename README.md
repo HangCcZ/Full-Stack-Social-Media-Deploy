@@ -12,7 +12,7 @@
 
 # Future plans and updates on the application:
 
-- [x] Modify Header component in sign-up page - Nov 21 2020
+- [x] Modify Header component in sign-up page - Updated on Nov 21 2020
 - [ ] Refactor sign-in form with formik
 - [ ] Sign-up validation
 - [ ] Update sign-up notification
