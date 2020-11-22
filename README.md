@@ -12,13 +12,13 @@
 
 # Future plans and updates on the application:
 
-- <s>Modify Header component in sign-up page</s>
-- Refactor sign-in form with formik
-- Sign-up validation
-- Update sign-up notification
-- Update sign-in notification
-- Add a new content field with markdown (Draft.js)
-- Allow user to upload images
+- [x] <s>Modify Header component in sign-up page</s>
+- [] Refactor sign-in form with formik
+- [] Sign-up validation
+- [] Update sign-up notification
+- [] Update sign-in notification
+- [] Add a new content field with markdown (Draft.js)
+- [] Allow user to upload images
 
 ---
 
