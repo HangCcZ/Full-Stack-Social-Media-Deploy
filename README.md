@@ -12,7 +12,7 @@
 
 # Future plans and updates on the application:
 
-- [x] <s>Modify Header component in sign-up page</s>
+- [x] Modify Header component in sign-up page
 - [ ] Refactor sign-in form with formik
 - [ ] Sign-up validation
 - [ ] Update sign-up notification
