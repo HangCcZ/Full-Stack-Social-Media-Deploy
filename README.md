@@ -14,7 +14,7 @@
 
 - [x] Modify Header component in sign-up page - **Updated on Nov 21 2020**
 - [x] Refactor sign-in form with formik - **Updated on Nov 22 2020**
-- [ ] Sign-up validation
+- [x] Sign-up validation
 - [ ] Update sign-up notification
 - [ ] Update sign-in notification
 - [ ] Add a new content field with markdown (Draft.js)
