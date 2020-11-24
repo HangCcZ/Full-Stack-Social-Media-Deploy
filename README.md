@@ -22,4 +22,4 @@
 
 ---
 
-**This repo contains only the deployment version code.** [Click here to see the frontend code](https://github.com/HangCcZ/Full-Stack-Blog-Sharing-Frontend)
+**This repository contains only the deployment version code.** [Click here to see the frontend code](https://github.com/HangCcZ/Full-Stack-Blog-Sharing-Frontend)
