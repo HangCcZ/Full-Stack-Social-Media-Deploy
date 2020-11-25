@@ -17,9 +17,13 @@
 - [x] Sign-up validation - **Updated on Nov 23 2020**
 - [x] Update sign-up notification **Updated on Nov 23 2020**
 - [x] Update sign-in notification **Updated on Nov 23 2020**
-- [ ] Refactor blog form with formik
-- [ ] Add a new content field with markdown (Draft.js)
+- [x] Refactor blog form with formik **Updated on Nov 25 2020**
+- [ ] Refactor comment form with formik
+- [ ] Add markdown support(Draft.js) to blog form
+- [ ] Add markdown support(Draft.js) to comment form
+- [ ] Add date property to blog posts
 - [ ] Allow user to upload images
+- [ ] Add blog search functionality
 
 ---
 
