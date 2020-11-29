@@ -29,6 +29,7 @@ blogsRouter.post("/", async (request, response) => {
     title: body.title,
     author: body.author,
     url: body.url,
+    content: body.content,
     likes: body.likes || 0,
     user: user,
     comments: [],
@@ -79,6 +80,7 @@ blogsRouter.put("/:id", async (request, response) => {
     author: body.author,
     url: body.url,
     likes: body.likes + 1,
+    content: body.content,
     comments: body.comments,
   }
   console.log(`params id for like update is`, request.params.id)
