@@ -21,7 +21,7 @@
 - [x] Refactor comment form with formik **Updated on Nov 28 2020**
 - [x] Add markdown support to blog form **Updated on Nov 28 2020**
 - [x] Add markdown support to comment form **Updated on Nov 28 2020**
-- [x] Add a Footer component **Updated on Nov 29 2020**
+- [x] Add a Footer component **Updated on Dec 2 2020**
 - [ ] Add date property to blog posts
 - [ ] Allow user to upload images
 - [ ] Add blog search functionality
