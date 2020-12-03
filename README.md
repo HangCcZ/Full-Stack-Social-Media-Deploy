@@ -10,6 +10,13 @@
 - React Bootstrap
 - Postman
 
+# Application screenshots
+
+- ![Image of account sign-up with validation](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/signup_validate.PNG)
+- ![Image of creating blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogform.PNG)
+- ![Image of a blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem.PNG)
+- ![Image of the blog being liked and commented](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem_like_comment.PNG)
+
 # Future plans and updates on the application:
 
 - [x] Modify Header component in sign-up page - **Updated on Nov 21 2020**
