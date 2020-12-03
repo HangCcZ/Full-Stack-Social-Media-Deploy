@@ -12,10 +12,14 @@
 
 # Application screenshots
 
-- ![Image of account sign-up with validation](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/signup_validate.PNG)
-- ![Image of creating blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogform.PNG)
-- ![Image of a blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem.PNG)
-- ![Image of the blog being liked and commented](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem_like_comment.PNG)
+Account sign-up with validation
+![Image of account sign-up with validation](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/signup_validate.PNG)
+User creating a blog with markdown content
+![Image of creating blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogform.PNG)
+Showing a sample blog
+![Image of a blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem.PNG)
+User can like and comment the blog
+![Image of the blog being liked and commented](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem_like_comment.PNG)
 
 # Future plans and updates on the application:
 
