@@ -5,7 +5,6 @@ const Blog = require("../models/blog")
 const User = require("../models/user")
 const usersRouter = require("./users")
 const jwt = require("jsonwebtoken")
-const { ConnectionBase } = require("mongoose")
 
 //      / =  /api/blogs
 blogsRouter.get("/", async (request, response) => {
@@ -15,7 +14,7 @@ blogsRouter.get("/", async (request, response) => {
 })
 
 blogsRouter.post("/", async (request, response) => {
-  const body = request.body
+  const { title, author, url, content, date } = request.body
 
   const decodedToken = jwt.verify(request.token, process.env.SECRET)
 
@@ -26,11 +25,12 @@ blogsRouter.post("/", async (request, response) => {
   const user = await User.findById(decodedToken.id)
 
   const blog = new Blog({
-    title: body.title,
-    author: body.author,
-    url: body.url,
-    content: body.content,
-    likes: body.likes || 0,
+    title,
+    author,
+    url,
+    content,
+    likes: 0,
+    date,
     user: user,
     comments: [],
   })
@@ -73,21 +73,20 @@ blogsRouter.delete("/:id", async (request, response) => {
 })
 
 blogsRouter.put("/:id", async (request, response) => {
-  const body = request.body
+  const { title, author, url, likes, content, comments } = request.body
 
   const updatedBlog = {
-    title: body.title,
-    author: body.author,
-    url: body.url,
-    likes: body.likes + 1,
-    content: body.content,
-    comments: body.comments,
+    title,
+    author,
+    url,
+    likes: likes + 1,
+    content,
+    comments,
   }
-  console.log(`params id for like update is`, request.params.id)
   const newBlog = await Blog.findByIdAndUpdate(request.params.id, updatedBlog, {
     new: true,
   }).populate("user", { username: 1, name: 1 })
-  console.log(newBlog)
+
   response.json(newBlog.toJSON())
 })
 
