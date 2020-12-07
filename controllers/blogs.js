@@ -5,6 +5,10 @@ const Blog = require("../models/blog")
 const User = require("../models/user")
 const usersRouter = require("./users")
 const jwt = require("jsonwebtoken")
+const { storage } = require("../cloudinary")
+const multer = require("multer")
+// const upload = multer({ dest: "uploads/" })
+const upload = multer({ storage })
 
 //      / =  /api/blogs
 blogsRouter.get("/", async (request, response) => {
@@ -13,7 +17,7 @@ blogsRouter.get("/", async (request, response) => {
   response.status(201).json(blogs)
 })
 
-blogsRouter.post("/", async (request, response) => {
+blogsRouter.post("/", upload.array("files"), async (request, response) => {
   const { title, author, url, content, date } = request.body
 
   const decodedToken = jwt.verify(request.token, process.env.SECRET)
