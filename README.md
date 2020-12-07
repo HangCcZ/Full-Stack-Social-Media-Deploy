@@ -33,11 +33,13 @@ User can like and comment the blog
 - [x] Add markdown support to blog form **Updated on Nov 28 2020**
 - [x] Add markdown support to comment form **Updated on Nov 28 2020**
 - [x] Add a Footer component **Updated on Dec 2 2020**
-- [ ] Add date property to blog posts
-- [ ] Allow user to upload images
+- [x] Add date property to blog posts **Updated on Dec 6 2020**
 - [ ] Add blog search functionality
 - [ ] Add sorting functionality
 - [ ] Add Pagination
+- [ ] Add styles to individual user page
+- [ ] Make application publicly visible - no sign-in required to view the posts
+- [ ] Allow user to upload images
 
 ---
 
