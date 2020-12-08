@@ -7,7 +7,6 @@ const usersRouter = require("./users")
 const jwt = require("jsonwebtoken")
 const { storage } = require("../cloudinary")
 const multer = require("multer")
-// const upload = multer({ dest: "uploads/" })
 const upload = multer({ storage })
 
 //      / =  /api/blogs
@@ -34,12 +33,15 @@ blogsRouter.post("/", upload.array("files"), async (request, response) => {
     url,
     content,
     likes: 0,
+    images:
+      request.files.map((f) => ({ url: f.path, filename: f.filename })) || [],
     date,
     user: user,
     comments: [],
   })
 
   const savedBlog = await blog.save()
+
   user.blogs = user.blogs.concat(savedBlog.id)
   await user.save()
 
