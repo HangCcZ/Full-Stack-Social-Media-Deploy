@@ -7,6 +7,12 @@ const blogSchema = new mongoose.Schema({
   content: { type: String },
   likes: Number,
   date: Number,
+  images: [
+    {
+      url: String,
+      filename: String,
+    },
+  ],
   comments: [{ type: String }],
   user: {
     type: mongoose.Schema.Types.ObjectId,
