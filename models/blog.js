@@ -1,18 +1,25 @@
 const mongoose = require("mongoose")
+const Schema = mongoose.Schema
 
-const blogSchema = new mongoose.Schema({
+const ImageSchema = new Schema({
+  url: String,
+  filename: String,
+})
+
+ImageSchema.set("toJSON", { virtuals: true })
+
+ImageSchema.virtual("thumbnail").get(function () {
+  return this.url.replace("/upload", "/upload/h_0.3,c_scale")
+})
+
+const blogSchema = new Schema({
   title: { type: String, required: true },
   author: String,
   url: { type: String, required: true },
   content: { type: String },
   likes: Number,
   date: Number,
-  images: [
-    {
-      url: String,
-      filename: String,
-    },
-  ],
+  images: [ImageSchema],
   comments: [{ type: String }],
   user: {
     type: mongoose.Schema.Types.ObjectId,
@@ -21,6 +28,7 @@ const blogSchema = new mongoose.Schema({
 })
 
 blogSchema.set("toJSON", {
+  virtuals: true,
   transform: (document, returnObject) => {
     returnObject.id = returnObject._id.toString()
     delete returnObject._id
