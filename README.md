@@ -12,18 +12,19 @@
 
 # Application screenshots
 
-Account sign-up with validation
+### Account sign-up with validation
 ![Image of account sign-up with validation](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/signup_validate.PNG)
-User can create blog with markdown content
+### User creating a blog with markdown content
 ![Image of creating blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogform.PNG)
-Showing a sample blog
+### Showing a sample blog
 ![Image of a blog with markdown](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem.PNG)
-User can like and comment the blog
+### User can like and comment the blog
 ![Image of the blog being liked and commented](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogItem_like_comment.PNG)
-Suppport image upload and display image in a carousel
+### Suppport image upload and display image in a carousel
 ![Image of a carousel](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blogImage_Carousel.PNG)
-Blog deletion modal
+### Blog deletion modal
 ![Image of a deletion modal](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blog_delete_modal.PNG)
+
 # Future plans and updates on the application:
 
 - [x] Modify Header component in sign-up page - **Updated on Nov 21 2020**
