@@ -36,7 +36,8 @@ User can like and comment the blog
 - [x] Add date property to blog posts **Updated on Dec 6 2020**
 - [x] Allow user to upload images **Updated on Dec 7 2020**
 - [x] Add Carousel to blog body **Updated on Dec 7 2020**
-- [ ] Fixed Carousel images height
+- [x] Fix Carousel images height **Updated on Dec 11 2020**
+- [x] Add blog deletion Modal **Updated on Dec 11 2020**
 - [ ] Add edit functionality
 - [ ] Add blog search functionality
 - [ ] Add sorting functionality
