@@ -25,6 +25,7 @@
 ### Blog deletion modal
 ![Image of a deletion modal](https://github.com/HangCcZ/App-Screenshots/blob/main/full-stack-blog-site/blog_delete_modal.PNG)
 
+---
 # Future plans and updates on the application:
 
 - [x] Modify Header component in sign-up page - **Updated on Nov 21 2020**
