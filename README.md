@@ -38,9 +38,9 @@ User can like and comment the blog
 - [x] Add Carousel to blog body **Updated on Dec 7 2020**
 - [x] Fix Carousel images height **Updated on Dec 11 2020**
 - [x] Add blog deletion Modal **Updated on Dec 11 2020**
+- [x] Add sorting functionality **Updated on Dec 12 2020**
 - [ ] Add edit functionality
 - [ ] Add blog search functionality
-- [ ] Add sorting functionality
 - [ ] Add Pagination
 - [ ] Add styles to individual user page
 - [ ] Make application publicly visible - no sign-in required to view the posts
