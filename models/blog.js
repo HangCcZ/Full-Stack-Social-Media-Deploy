@@ -9,7 +9,7 @@ const ImageSchema = new Schema({
 ImageSchema.set("toJSON", { virtuals: true })
 
 ImageSchema.virtual("thumbnail").get(function () {
-  return this.url.replace("/upload", "/upload/h_0.3,c_scale")
+  return this.url.replace("/upload", "/upload/h_0.7,c_scale")
 })
 
 const blogSchema = new Schema({

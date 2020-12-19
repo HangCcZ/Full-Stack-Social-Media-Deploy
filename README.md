@@ -56,9 +56,9 @@
 - [x] Fix Carousel images height **Updated on Dec 11 2020**
 - [x] Add blog deletion Modal **Updated on Dec 11 2020**
 - [x] Add sorting functionality **Updated on Dec 12 2020**
-- [ ] Add Pagination **Updated on Dec 14 2020**
+- [x] Add Pagination **Updated on Dec 14 2020**
+- [x] Add blog search functionality **Updated on Dec 15 2020**
 - [ ] Add edit functionality
-- [ ] Add blog search functionality
 - [ ] Add styles to individual user page
 - [ ] Make application publicly visible - no sign-in required to view the posts
 
