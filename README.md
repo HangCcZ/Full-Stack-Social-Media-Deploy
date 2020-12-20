@@ -58,8 +58,8 @@
 - [x] Add sorting functionality **Updated on Dec 12 2020**
 - [x] Add Pagination **Updated on Dec 14 2020**
 - [x] Add blog search functionality **Updated on Dec 15 2020**
+- [x] Add styles to individual user page **Updated Dec 19 2020**
 - [ ] Add edit functionality
-- [ ] Add styles to individual user page
 - [ ] Make application publicly visible - no sign-in required to view the posts
 
 ---
