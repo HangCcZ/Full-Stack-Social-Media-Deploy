@@ -1,21 +1,19 @@
-const mongoose = require("mongoose")
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const ImageSchema = new Schema({
   url: String,
   filename: String,
-})
+});
 
-ImageSchema.set("toJSON", { virtuals: true })
+ImageSchema.set("toJSON", { virtuals: true });
 
 ImageSchema.virtual("thumbnail").get(function () {
-  return this.url.replace("/upload", "/upload/h_0.7,c_scale")
-})
+  return this.url.replace("/upload", "/upload/h_0.7,c_scale");
+});
 
 const blogSchema = new Schema({
   title: { type: String, required: true },
-  author: String,
-  url: { type: String, required: true },
   content: { type: String },
   likes: Number,
   date: Number,
@@ -25,15 +23,15 @@ const blogSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
-})
+});
 
 blogSchema.set("toJSON", {
   virtuals: true,
   transform: (document, returnObject) => {
-    returnObject.id = returnObject._id.toString()
-    delete returnObject._id
-    delete returnObject.__v
+    returnObject.id = returnObject._id.toString();
+    delete returnObject._id;
+    delete returnObject.__v;
   },
-})
+});
 
-module.exports = mongoose.model("Blog", blogSchema)
+module.exports = mongoose.model("Blog", blogSchema);

@@ -59,6 +59,8 @@
 - [x] Add Pagination **Updated on Dec 14 2020**
 - [x] Add blog search functionality **Updated on Dec 15 2020**
 - [x] Add styles to individual user page **Updated Dec 19 2020**
+- [x] Modify blog posting requirement **Updated Feb 01 2021**
+- [x] Modify signup requirement **Updated Feb 01 2021**
 - [ ] Add edit functionality
 - [ ] Make application publicly visible - no sign-in required to view the posts
 
