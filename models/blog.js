@@ -15,7 +15,7 @@ ImageSchema.virtual("thumbnail").get(function () {
 const blogSchema = new Schema({
   title: { type: String, required: true },
   content: { type: String },
-  likes: Number,
+  likes: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
   date: Number,
   images: [ImageSchema],
   comments: [{ type: String }],

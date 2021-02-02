@@ -7,11 +7,12 @@ const usersRouter = require("./users");
 const jwt = require("jsonwebtoken");
 const { storage } = require("../cloudinary");
 const multer = require("multer");
+const { conforms } = require("lodash");
 const upload = multer({ storage });
 
 //      / =  /api/blogs
 blogsRouter.get("/", async (request, response) => {
-  const blogs = await Blog.find({}).populate("user", { username: 1, name: 1 });
+  const blogs = await Blog.find({}).populate("user", { username: 1 });
   response.status(201).json(blogs);
 });
 
@@ -29,7 +30,7 @@ blogsRouter.post("/", upload.array("files"), async (request, response) => {
   const blog = new Blog({
     title,
     content,
-    likes: 0,
+    likes: [],
     images:
       request.files.map((f) => ({ url: f.path, filename: f.filename })) || [],
     date,
@@ -75,21 +76,47 @@ blogsRouter.delete("/:id", async (request, response) => {
   }
 });
 
-blogsRouter.put("/:id", async (request, response) => {
-  const { title, author, url, likes, content, comments } = request.body;
+blogsRouter.put("/:id/like", async (request, response) => {
+  const body = request.body;
+  const likedUser = await User.findById(body.userID).select("username _id");
 
-  const updatedBlog = {
-    title,
-    author,
-    url,
-    likes: likes + 1,
-    content,
-    comments,
-  };
-  const newBlog = await Blog.findByIdAndUpdate(request.params.id, updatedBlog, {
-    new: true,
-  }).populate("user", { username: 1, name: 1 });
+  const blog = await Blog.findById(request.params.id);
+  const newBlog = await Blog.findByIdAndUpdate(
+    request.params.id,
+    {
+      likes: [...blog.likes, likedUser],
+    },
+    {
+      new: true,
+    }
+  )
+    .populate("user", { username: 1 })
+    .populate("likes", { username: 1 });
+  response.json(newBlog.toJSON());
+});
 
+// update only the like field
+blogsRouter.put("/:id/unlike", async (request, response) => {
+  const body = request.body;
+
+  const unlikedUser = await User.findById(body.userID).select("username _id");
+  const blog = await Blog.findById(request.params.id).populate("likes");
+
+  const newBlog = await Blog.findByIdAndUpdate(
+    request.params.id,
+    {
+      likes: [
+        ...blog.likes.filter((likeUser) => {
+          return likeUser.username !== unlikedUser.username;
+        }),
+      ],
+    },
+    {
+      new: true,
+    }
+  )
+    .populate("user", { username: 1 })
+    .populate("likes", { username: 1 });
   response.json(newBlog.toJSON());
 });
 
@@ -103,7 +130,7 @@ blogsRouter.post("/:id/comments", async (request, response) => {
   };
   const newBlog = await Blog.findByIdAndUpdate(request.params.id, updatedBlog, {
     new: true,
-  }).populate("user", { username: 1, name: 1 });
+  }).populate("user", { username: 1 });
 
   response.json(newBlog.toJSON());
 });
