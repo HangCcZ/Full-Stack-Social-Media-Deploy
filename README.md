@@ -62,8 +62,6 @@
 - [x] Modify blog posting requirement **Updated Feb 01 2021**
 - [x] Modify signup requirement **Updated Feb 01 2021**
 - [x] Update like button behavior **Updated Feb 01 2021**
-- [ ] Add edit functionality
-- [ ] Make application publicly visible - no sign-in required to view the posts
 
 ---
 
