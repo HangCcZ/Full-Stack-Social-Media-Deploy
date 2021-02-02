@@ -12,7 +12,9 @@ const upload = multer({ storage });
 
 //      / =  /api/blogs
 blogsRouter.get("/", async (request, response) => {
-  const blogs = await Blog.find({}).populate("user", { username: 1 });
+  const blogs = await Blog.find({})
+    .populate("user", { username: 1 })
+    .populate("likes", { username: 1 });
   response.status(201).json(blogs);
 });
 
