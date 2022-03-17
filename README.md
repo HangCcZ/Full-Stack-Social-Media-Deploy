@@ -1,5 +1,8 @@
 # This is a full stack web application that allow users to share news, ideas and more. [Click here to see the live version. Sign up an account and leave a post!](https://full-stack-blog-sharing.herokuapp.com/)
 
+**This repository contains only the deployment version code.** [Click here to see the frontend code](https://github.com/HangCcZ/Full-Stack-Blog-Sharing-Frontend)
+
+
 # Framework, library and tool used
 
 - React
@@ -63,6 +66,3 @@
 - [x] Modify signup requirement **Updated Feb 01 2021**
 - [x] Update like button behavior **Updated Feb 01 2021**
 
----
-
-**This repository contains only the deployment version code.** [Click here to see the frontend code](https://github.com/HangCcZ/Full-Stack-Blog-Sharing-Frontend)
